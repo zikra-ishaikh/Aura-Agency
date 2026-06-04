@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌌 AuraAgency — Premium Next.js 16 & Tailwind CSS v4 Boilerplate Template
 
-## Getting Started
+A blazing-fast, dark-mode exclusive marketing shell and developer boilerplate designed for creative agencies, AI automation studios, and elite freelancers. 
 
-First, run the development server:
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/zikra-ishaikh/Aura-Agency)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🎨 Design System & Aesthetic DNA
+
+- **Dark-Mode Base**: Zinc Black (`#09090b`) canvas utilizing a mesh grid and glowing purple/cyan blooms.
+- **Frosted Glass Cards**: Semi-transparent frosted glass panels (`rgba(24, 24, 27, 0.65)`) with translucent 1px borders.
+- **Spotlight Hover Effects**: Mouse cursor tracking radial glows that follow the pointer across card faces and card borders.
+- **Magnetic Interactivity**: Physics-aligned magnetic translate shifts applied to call-to-actions on hover.
+- **Stark Contrast Typography**: Outfitted with bold tracking headers (Plus Jakarta Sans) mixed with monospaced terminal text (Geist Mono).
+
+---
+
+## 🏗️ Folder Architecture
+
+We decouple primitive UI items from structural marketing sections:
+
+```txt
+src/
+├── app/
+│   ├── actions.ts           # Contact validation Server Action
+│   ├── globals.css          # Tailwind CSS v4 variable theme overrides
+│   ├── layout.tsx           # Global HTML wrapper and font loaders
+│   ├── page.tsx             # Home landing page with animated Hero
+│   ├── about/
+│   │   └── page.tsx         # Philosophy & team grid showcase
+│   ├── contact/
+│   │   └── page.tsx         # Contact Form using React 19 useActionState
+│   └── not-found.tsx        # Custom 404 route featuring a portal animation
+├── components/
+│   ├── ui/
+│   │   ├── glow-card.tsx    # Cursor spotlight tracking card panels
+│   │   └── magnetic.tsx     # Smooth physical magnetic pull wrapper
+│   └── marketing/
+│       ├── navbar.tsx       # Frosted glass responsive header
+│       ├── footer.tsx       # Custom SVG social widget footbar
+│       └── bento-grid.tsx   # Premium Bento Grid capability structure
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚡ Technical Highlights
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: Next.js 16+ (App Router) using React Server Components (RSC).
+- **Styling**: Tailwind CSS v4 utilizing native CSS-first `@theme` variables.
+- **Forms**: Powered by React 19's new `useActionState` and Server Actions for validated submissions.
+- **Strict TypeScript**: Full type safety configured for variables and route parameters.
+- **Compiling**: Compiled and bundled with Turbopack for near-instant rendering.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Getting Started
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 1. Clone the project
+```bash
+git clone https://github.com/zikra-ishaikh/Aura-Agency.git
+cd Aura-Agency
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 2. Install dependencies
+```bash
+npm install
+```
 
-## Deploy on Vercel
+### 3. Run the development server
+```bash
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Open [http://localhost:3000](http://localhost:3000) in your browser to inspect the application.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 4. Build for production
+```bash
+npm run build
+```
+
+---
+
+## 📄 License
+
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
